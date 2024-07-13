@@ -3,7 +3,7 @@ import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import MovieList from './Components/MovieList';
 import Movie from './Components/Movie'; 
-import StarRating from './Components/Stars';
+
 
 function App() {
 const moviesData = [
@@ -12,20 +12,20 @@ const moviesData = [
     movieName: "Commando",
     poster: "https://www.slashfilm.com/img/gallery/arnold-schwarzenegger-pushed-himself-a-little-too-far-while-filming-commando/l-intro-1648646727.jpg",
     rating:'\u2605\u2605\u2605\u2605\u2605',
-    synopsis: `Synopsis: A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.`
+    synopsis: `Synopsis: A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.`
   },
   {
     id: 2,
     movieName: "Predator",
     poster: "https://fwmedia.fandomwire.com/wp-content/uploads/2023/11/16043639/arnold-schwarzenegger-refused-returning-to-predator-due-to-his-big-fat-450m-ego.jpg",
     rating:'\u2605\u2605\u2605\u2605\u2605',
-    synopsis: `Synopsis: A retired Special Forces colonel tries to save his daughter, who was abducted by his former subordinate.`
+    synopsis: `Synopsis: A team of commandos on a mission in a Central American jungle find themselves hunted by an extraterrestrial warrior.`
 
   },
   {
     id: 3,
     movieName: "Total Recall",
-    poster: "https://cdn.mos.cms.futurecdn.net/xNXDAovetmWoXQJKw3Dgbe.jpg",
+    poster: "https://houseofgeekery.com/wp-content/uploads/2016/11/total-recall.jpg",
     rating:'\u2605\u2605\u2605\u2605\u2605',
     synopsis: `Synopsis: When a man goes in to have virtual vacation memories of the planet Mars implanted in his mind, an unexpected and harrowing series of events forces him to go to the planet for real - or is he?`
   },
@@ -35,7 +35,9 @@ const moviesData = [
 
   return (
     <div className="App">
-      
+        <div className="card-header bg-light">
+          <h1>Top Arnold Schwarzenegger Movies</h1>
+        </div>
       <MovieList moviesData={moviesData}/>
       <Movie moviesData={moviesData} />
      

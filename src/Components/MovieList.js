@@ -4,8 +4,8 @@ import StarRating from "./Stars";
 export default function MovieList({moviesData})  {
     console.log("MovieList Movies data:", moviesData);
     return (
-        <>
-        Movie List Component
+        <div className="card bg-dark" id="header" key='header'>
+        
 
         {moviesData.map(
         (movie, index) => {
@@ -31,6 +31,6 @@ export default function MovieList({moviesData})  {
           )
         }
       )}
-        </>
+        </div>
     )
 }
