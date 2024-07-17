@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import MovieList from './Components/MovieList';
+ import MovieList from './Components/MovieList';
 import Movie from './Components/Movie'; 
 
 
@@ -38,7 +38,7 @@ const moviesData = [
         <div className="card-header bg-light">
           <h1>Top Arnold Schwarzenegger Movies</h1>
         </div>
-      <MovieList moviesData={moviesData}/>
+       <MovieList moviesData={moviesData}/>
       <Movie moviesData={moviesData} />
      
      
@@ -57,4 +57,3 @@ export default App;
 // ReviewList: a container inside of a Movie that houses Review components.
 // Review: A text review a user can leave on a movie.
 // ReviewForm: a form at the bottom of a Movie component that allows users to leave reviews. When submitted, the review should be added to the movie. All this data can be stored in an array, no networking or database needed for this assignment.
-// instead of trying to make an object for the specific movies, try simplifying it on the "movie" component and use the "movie List" to bring it all together. 
