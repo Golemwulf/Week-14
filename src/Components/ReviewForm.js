@@ -1,10 +1,11 @@
-import { useState } from "react"
+import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 export default function ReviewForm ({movie, reviews, setReviews}){
 
     const [currReview, setCurrReview] =useState("")
    function handleClick(e){
     let newReview = {
-        "id": movie.id + new Date(),
+        "id": uuidv4(),
         "movie_id": movie.id,
         "review": currReview
     }

@@ -1,10 +1,27 @@
 import { useState } from "react";
+import { v4 as uuidv4 } from 'uuid';
 import ReviewForm from "./ReviewForm";
 import StarRating from "./Stars";
 import ReviewList from './ReviewList'
 
 export default function MovieList({moviesData})  {
-  const [reviews, setReviews] = useState([])
+  const [reviews, setReviews] = useState([
+    {
+      'id': uuidv4(),
+      'movie_id': 1,
+      "review": "Don't bother my friend, he's dead tired."
+    },
+    {
+      'id': uuidv4(),
+      'movie_id': 2,
+      "review": "Get to the Choppa!!."
+    },
+    {
+      'id': uuidv4(),
+      'movie_id': 2,
+      "review": "Stick around."
+    }
+  ])
     console.log("MovieList Movies data:", moviesData);
 
   function filterReviewsByMovie(id){
